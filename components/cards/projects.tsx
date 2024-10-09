@@ -13,7 +13,7 @@ const Projects = () => {
 
     const router = useRouter();
     
-    const HandleRedirect = (href: any) => {
+    const HandleRedirect = (href: string) => {
         router.push(href)
     }
 

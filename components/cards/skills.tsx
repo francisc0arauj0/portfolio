@@ -28,7 +28,7 @@ const Skills = () => {
             <Card className="w-[55ex] rounded-none sm:rounded-lg bg-transparent sm:bg-card-foreground/5 border-none">
                 <CardHeader>
                     <CardTitle>My Skills</CardTitle>
-                    <CardDescription>What I learned and what I'm learning in a 5 year radius</CardDescription>
+                    <CardDescription>What I learned and what I&rsquo;m learning in a 5 year radius</CardDescription>
                 </CardHeader>
                 <CardContent>
                     <Tabs defaultValue="front">
