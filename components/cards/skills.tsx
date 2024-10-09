@@ -43,10 +43,10 @@ const Skills = () => {
                                     <CardTitle>Front</CardTitle>
                                     <CardDescription>All my front-end skills</CardDescription>
                                 </CardHeader>
-                                {FrontEndList.map((item) => (
+                                {FrontEndList.map((item, index) => (
                                     <CardContent className="flex flex-col gap-6">
                                         <div className="flex flex-row items-center row-span-2 justify-between">
-                                            <h1 className="w-20">{item.name}</h1>
+                                            <h1 className="w-20">{item.name || index}</h1>
                                             <Progress className="h-2 bg-black/40" value={item.value} />
                                         </div>
                                     </CardContent>
@@ -59,10 +59,10 @@ const Skills = () => {
                                     <CardTitle>Back</CardTitle>
                                     <CardDescription>All my back-end skills</CardDescription>
                                 </CardHeader>
-                                {BackEndList.map((item) => (
+                                {BackEndList.map((item, index) => (
                                     <CardContent className="flex flex-col gap-6">
                                         <div className="flex flex-row items-center row-span-2 justify-between">
-                                            <h1 className="w-20">{item.name}</h1>
+                                            <h1 className="w-20">{item.name || index}</h1>
                                             <Progress className="h-2 bg-black/40" value={item.value} />
                                         </div>
                                     </CardContent>
@@ -75,10 +75,10 @@ const Skills = () => {
                                     <CardTitle>Devops</CardTitle>
                                     <CardDescription>All my devops skills</CardDescription>
                                 </CardHeader>
-                                {DevopsList.map((item) => (
+                                {DevopsList.map((item, index) => (
                                     <CardContent className="flex flex-col gap-6">
                                         <div className="flex flex-row items-center row-span-2 justify-between">
-                                            <h1 className="w-20">{item.name}</h1>
+                                            <h1 className="w-20">{item.name || index}</h1>
                                             <Progress className="h-2 bg-black/40" value={item.value} />
                                         </div>
                                     </CardContent>
