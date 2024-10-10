@@ -18,14 +18,14 @@ const Projects = () => {
     }
 
     return (
-        <div className="flex justify-center pt-10">
+        <div className="flex justify-center">
             <Card className="w-[55ex] rounded-none sm:rounded-lg bg-transparent sm:bg-card-foreground/5 border-none">
                 <CardHeader>
                     <CardTitle>Projects</CardTitle>
                     <CardDescription>All my projects listed here.</CardDescription>
                 </CardHeader>
                 <CardContent>
-                    <Carousel className="w-[270px] sm:w-full">
+                    <Carousel opts={{align: "start"}} orientation="vertical">
                         <CarouselContent>
                             {ProjectsList.map((item) => (
                                 <CarouselItem key={item.name}>

@@ -2,16 +2,14 @@ import Navbar from "@/components/navbar";
 import About from "@/components/cards/about";
 import Skills from "@/components/cards/skills";
 import Projects from "@/components/cards/projects";
-import Construction from "@/components/cards/contruction";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col gap-8">
       <Navbar/>
       <About/>
       <Skills/>
       <Projects/>
-      <Construction/>
     </div>
   );
 }

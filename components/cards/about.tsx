@@ -14,11 +14,13 @@ const About = () => {
     }
 
     return (
-        <div className="flex justify-center pt-10">
+        <div className="flex justify-center">
             <Card className="w-[55ex] rounded-none sm:rounded-lg bg-transparent sm:bg-card-foreground/5 border-none">
                 <CardHeader>
                     <CardTitle>Hello there,</CardTitle>
-                    <CardDescription>Everything you can know about me is on this page.</CardDescription>
+                    <CardDescription>
+                        Everything you can know about me is on this page.
+                    </CardDescription>
                 </CardHeader>
                 <CardFooter>
                     <Button onClick={() => HandleRedirect("mailto:franciscocoelhoaraujo492000@gmail.com")} className="gap-2">
