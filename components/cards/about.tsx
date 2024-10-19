@@ -23,7 +23,7 @@ const About = () => {
                     </CardDescription>
                 </CardHeader>
                 <CardFooter>
-                    <Button onClick={() => HandleRedirect("mailto:franciscocoelhoaraujo492000@gmail.com")} className="gap-2">
+                    <Button onClick={() => HandleRedirect("mailto:franciscocoelhoaraujo492000@gmail.com")} className="w-full sm:w-32 gap-2">
                         <Mail className="w-4 h-4"/>
                         Contact 
                     </Button>
