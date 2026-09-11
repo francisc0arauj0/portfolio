@@ -1,0 +1,53 @@
+:root {
+	--white-color: hsl(0, 0%, 94%);
+	--black-color: hsl(0, 0%, 6%);
+
+	--z-minus: -1;
+	--z-base: 0;
+	--z-low: 1;
+	--z-high: 10;
+	--z-max: 9999;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	cursor: none;
+}
+
+body {
+	background-color: var(--black-color);
+}
+
+.hero {
+	height: 100vh;
+}
+
+.cursor {
+	z-index: var(--z-max);
+	position: fixed;
+	pointer-events: none;
+}
+
+.cursor-dot {
+	position: absolute;
+	background: var(--white-color);
+	width: 5px;
+	height: 5px;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	transition-property: top, left, width, height;
+	transition-duration: .03s, .03s, .3s, .3s;
+}
+
+.cursor-circle {
+	position: absolute;
+	border: 2px solid var(--white-color);
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	opacity: .5;
+	transform: translate(-50%, -50%);
+	transition-property: top, left;
+	transition-duration: .09s, .09s;
+}
